@@ -14,7 +14,7 @@ More examples
 
 # [1.0.0] - 2020-05-23
 
-* [Release notes](release/release-v1v0v0.md)
+* [Release notes](release/release_v1v0v0.md)
 
 The first examples from 001 to 004 with classes, static/instance functions, parameters, arrays, loops, if, codedoc.
 

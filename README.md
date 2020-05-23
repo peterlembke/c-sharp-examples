@@ -40,39 +40,39 @@ All commands to set up a project are done in the terminal, NOT in VSCode.
 
 Start the terminal. Create a folder (mkdir my_folder) and go into it (cd my_folder).
 
-**solution**  
+#### solution
 Create new "solution" that keeps the project togehter.
 ```
 dotnet new sln -n "VSCodeIntroSln"
 ```
 
-**namespace and the first class with the main function**
+#### namespace and the first class with the main function
 You do this for each name space. Then you can create more classes later.
 ```
 dotnet new console -n "IntroUI"
 ```
 
-**Classlib**
+#### Classlib
 Create a generic domain and class you can reuse in other programs.
 See [Library](https://docs.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio?tabs=csharp) in the doc.
 ```
 dotnet new classlib -n "IntroLibrary"
 ```
 
-**solution know files**
+#### solution know files
 Let the solution know about all files like this.
 ```
 dotnet sln VSCodeIntroSln.sln add **/*.csproj
 ```
 This command works in MacOS and Linus. For Windows you have to add each file separately.
 
-**reference the library**
+#### reference the library
 If we want to use the library we must reference it in our class.
 ```
 dotnet add IntroUI/IntroUI.csproj reference IntroLibrary/IntroLibrary.csproj
 ```
 
-**create debug files**
+#### create debug files
 Now VSCode will create two files for us in two places.
 
 ```
@@ -87,10 +87,10 @@ code .
 ```
 That will start VSCode. After a few seconds you get a popup in the lower right asking if the files should be created. Answer "Yes".
 
-**Better classlib class**
+#### Better classlib class
 You can delete `class1.cs` in the class lib folder and create any class you want there.
 
-**run**
+#### run
 You can start + debug from VSCode with F5.
 
 You can run the project from the terminal.

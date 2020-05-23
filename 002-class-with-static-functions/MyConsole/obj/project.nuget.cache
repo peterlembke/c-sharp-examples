@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vhQBM03upuMx8EHfGSJ1A74NBYMP72xqOoAK7KQr+j9JF8SqdV5tFPbY7gVNdGPiSvoVy+RO25RpHNGyAMQHIQ==",
+  "success": true,
+  "projectFilePath": "/home/peter/csharp/002-class-with-static-functions/MyConsole/MyConsole.csproj",
+  "expectedPackageFiles": [
+    "/home/peter/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

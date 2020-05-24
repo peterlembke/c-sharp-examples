@@ -1,9 +1,7 @@
 # Basic examples in C#
-I have created some basic examples in C# to learn the language and have a simple reference with working code.
+You can learn C# with these basic examples. You can use the exampels as working reference code.
 
-I work in Linux and MacOS but the examples should work on Windows too without any changes.
-
-Goal is to extend this repository with more examples when I learn more.
+![logo](images/logo.png)
 
 ## Setup
 Watch this Youtube video: [Intro to VSCode for C# Developers - From Installation to Debugging](https://youtu.be/r5dtl9Uq9V0)  

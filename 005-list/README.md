@@ -4,7 +4,9 @@ An array can not add/remove items but a list can.
 
 ## List
 If you want to have a variable length array then you must use lists.
-Read about [list](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netcore-3.1).
+Read about [list in the doc](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netcore-3.1).
+
+Read an [article about list](https://www.c-sharpcorner.com/article/c-sharp-list/).
 
 There is a lot of built in commands in the List class. This example show some of them.
 

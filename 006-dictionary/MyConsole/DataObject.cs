@@ -92,11 +92,11 @@ namespace MyConsole
     class DataObject
     {        
         /// <summary>The dictionary</summary>
-        protected Dictionary<string, DataObjectItem> keyValueDictionary;
+        protected Dictionary<string, string> keyValueDictionary;
 
         /// <summary>Constructor that create an empty dictionary</summary>
         public DataObject() {
-            keyValueDictionary = new Dictionary<string, DataObjectItem>();
+            keyValueDictionary = new Dictionary<string, string>();
         }
 
         /// <summary>Set a value</summary>

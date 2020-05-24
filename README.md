@@ -1,7 +1,7 @@
 # Basic examples in C#
 You can learn C# with these basic examples. You can use the exampels as working reference code.
 
-![logo](images/logo.png)
+![logo](image/logo.png)
 
 ## Setup
 Watch this Youtube video: [Intro to VSCode for C# Developers - From Installation to Debugging](https://youtu.be/r5dtl9Uq9V0)  

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyConsole</name>
+    </assembly>
+    <members>
+        <member name="T:MyConsole.Person">
+            <summary>Class for a person</summary>
+        </member>
+        <member name="M:MyConsole.Person.ToString">
+            <summary>Used when you want to print the object data</summary>
+        </member>
+        <member name="M:MyConsole.Person.Equals(System.Object)">
+            <summary>Used for comparing</summary>
+        </member>
+        <member name="M:MyConsole.Person.GetHashCode">
+            <summary>Required to get Equals to work. Returns the ID for the object</summary>
+        </member>
+        <member name="M:MyConsole.Person.Equals(MyConsole.Person)">
+            <summary>Used by Equals when it calls itself with a onePerson object</summary>
+        </member>
+        <member name="M:MyConsole.Program.Main(System.String[])">
+            <summary>Example that use a list with objects</summary>
+        </member>
+        <member name="M:MyConsole.Program.CreatePersonList">
+            <summary>Creates and returns a list with Person objects that has data</summary>
+        </member>
+        <member name="M:MyConsole.Program.EchoPersonList(System.Collections.Generic.List{MyConsole.Person})">
+            <summary>Shows the list in the Console</summary>
+        </member>
+        <member name="M:MyConsole.Program.ChangeItems(System.Collections.Generic.List{MyConsole.Person})">
+            <summary>Loops trough the list and change all names</summary>
+        </member>
+        <member name="M:MyConsole.Program.RemoveItems(System.Collections.Generic.List{MyConsole.Person})">
+            <summary>Remove item by index. Remove item by finding the BirthYear</summary>
+        </member>
+        <member name="M:MyConsole.Program.FindOneItem(System.Collections.Generic.List{MyConsole.Person})">
+            <summary>Find an item by part of the name and then we update the name</summary>
+        </member>
+        <member name="M:MyConsole.Program.Echo(System.String)">
+            <summary>Writes to the console</summary>
+        </member>
+    </members>
+</doc>

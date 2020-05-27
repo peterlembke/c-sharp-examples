@@ -8,9 +8,8 @@ namespace MyConsole
         /// <summary>Example that use a list with objects</summary>
         static void Main(string[] args)
         {
-            Dictionary<string, string> myLookup = new Dictionary<string, string>();
-
-            
+            var personList = CreatePersonList();
+            EchoPersonList(personList);
 
             personList = ChangeItems(personList);
             EchoPersonList(personList);
@@ -23,44 +22,51 @@ namespace MyConsole
         }
 
         /// <summary>Creates and returns a list with Person objects that has data</summary>
-        protected static List<Person> CreatePersonList() 
+        protected static Dictionary<string, Person> CreatePersonList() 
         {
-            List<Person> personList = new List<Person>();
+            Dictionary<string, Person> personList = new Dictionary<string, Person>();
 
-            personList.Add(new Person() { BirthYear=1990, Name="Adam" } );
-            personList.Add(new Person() { BirthYear=1991, Name="Bertil" } );
-            personList.Add(new Person() { BirthYear=1992, Name="Cesar" } );
-            personList.Add(new Person() { BirthYear=1993, Name="David" } );
-            personList.Add(new Person() { BirthYear=1994, Name="Erik" } );
-            personList.Add(new Person() { BirthYear=1995, Name="Filip" } );
+            personList.Add("001", new Person() { Id="001", BirthYear=1990, Name="Adam" } );
+            personList.Add("002", new Person() { Id="002", BirthYear=1991, Name="Bertil" } );
+            personList.Add("003", new Person() { Id="003", BirthYear=1992, Name="Cesar" } );
+            personList.Add("004", new Person() { Id="004", BirthYear=1993, Name="David" } );
+            personList.Add("005", new Person() { Id="005", BirthYear=1994, Name="Erik" } );
+            personList.Add("006", new Person() { Id="006", BirthYear=1995, Name="Filip" } );
 
             return personList;
         }
 
         /// <summary>Shows the list in the Console</summary>
-        protected static void EchoPersonList(List<Person> personList)
+        protected static void EchoPersonList(Dictionary<string, Person> personList)
         {
-            foreach (Person myItem in personList) {
-                Echo(myItem.ToString());
+
+
+            foreach (KeyValuePair<string, Person> entry in personList)
+            {
+                // do something with entry.Value or entry.Key
+                Echo(entry.Value.ToString());
             }
+
             Echo("-------------------------------");
         }
 
         /// <summary>Loops trough the list and change all names</summary>
-        protected static List<Person> ChangeItems(List<Person> personList)
+        protected static Dictionary<string, Person> ChangeItems(Dictionary<string, Person> personList)
         {
-            foreach (Person myItem in personList) {
-                myItem.Name = myItem.Name + "-a";
+            foreach (KeyValuePair<string, Person> entry in personList)
+            {
+                // do something with entry.Value or entry.Key
+                entry.Value.Name = entry.Value.Name + "-a";
             }
 
             return personList;
         }
 
         /// <summary>Remove item by index. Remove item by finding the BirthYear</summary>
-        protected static List<Person> RemoveItems(List<Person> personList)
+        protected static Dictionary<string, Person> RemoveItems(Dictionary<string, Person> personList)
         {
             // Remove by list index
-            personList.RemoveAt(3); // Item 0,1,2,3 - David will be removed.
+            personList.Remove("003"); // Removes Cesar
 
             // Remove by search - The compare will look at BirthYear only so Bertil will be removed.
             // See required functions MyClass -> Person: Equals and GetHashCode.
@@ -71,7 +77,7 @@ namespace MyConsole
         }
 
         /// <summary>Find an item by part of the name and then we update the name</summary>
-        protected static List<Person> FindOneItem(List<Person> personList)
+        protected static Dictionary<string, Person> FindOneItem(Dictionary<string, Person> personList)
         {
             var onePerson = personList.Find(x => x.Name.Contains("Cesar"));
             if (onePerson != null) {
@@ -85,6 +91,5 @@ namespace MyConsole
         protected static void Echo(string row = "") {
             Console.WriteLine(row);
         }
-
     }
 }

@@ -4,6 +4,21 @@
         <name>MyConsole</name>
     </assembly>
     <members>
+        <member name="T:MyConsole.DataObject">
+            <summary>Class for a data object</summary>
+        </member>
+        <member name="F:MyConsole.DataObject.keyValueDictionary">
+            <summary>The dictionary</summary>
+        </member>
+        <member name="M:MyConsole.DataObject.#ctor">
+            <summary>Constructor that create an empty dictionary</summary>
+        </member>
+        <member name="M:MyConsole.DataObject.Set(System.String,System.String)">
+            <summary>Set a value</summary>
+        </member>
+        <member name="M:MyConsole.DataObject.Get(System.String,System.String)">
+            <summary>Get a value</summary>
+        </member>
         <member name="T:MyConsole.Person">
             <summary>Class for a person</summary>
         </member>
@@ -25,16 +40,16 @@
         <member name="M:MyConsole.Program.CreatePersonList">
             <summary>Creates and returns a list with Person objects that has data</summary>
         </member>
-        <member name="M:MyConsole.Program.EchoPersonList(System.Collections.Generic.List{MyConsole.Person})">
+        <member name="M:MyConsole.Program.EchoPersonList(System.Collections.Generic.Dictionary{System.String,MyConsole.Person})">
             <summary>Shows the list in the Console</summary>
         </member>
-        <member name="M:MyConsole.Program.ChangeItems(System.Collections.Generic.List{MyConsole.Person})">
+        <member name="M:MyConsole.Program.ChangeItems(System.Collections.Generic.Dictionary{System.String,MyConsole.Person})">
             <summary>Loops trough the list and change all names</summary>
         </member>
-        <member name="M:MyConsole.Program.RemoveItems(System.Collections.Generic.List{MyConsole.Person})">
+        <member name="M:MyConsole.Program.RemoveItems(System.Collections.Generic.Dictionary{System.String,MyConsole.Person})">
             <summary>Remove item by index. Remove item by finding the BirthYear</summary>
         </member>
-        <member name="M:MyConsole.Program.FindOneItem(System.Collections.Generic.List{MyConsole.Person})">
+        <member name="M:MyConsole.Program.FindOneItem(System.Collections.Generic.Dictionary{System.String,MyConsole.Person})">
             <summary>Find an item by part of the name and then we update the name</summary>
         </member>
         <member name="M:MyConsole.Program.Echo(System.String)">

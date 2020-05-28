@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/peter/c-sharp-examples/005-list/MyConsole/MyConsole.csproj": {}
+    "/home/peter/c-sharp-examples/006-dictionary/MyConsole/MyConsole.csproj": {}
   },
   "projects": {
-    "/home/peter/c-sharp-examples/005-list/MyConsole/MyConsole.csproj": {
+    "/home/peter/c-sharp-examples/006-dictionary/MyConsole/MyConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/peter/c-sharp-examples/005-list/MyConsole/MyConsole.csproj",
+        "projectUniqueName": "/home/peter/c-sharp-examples/006-dictionary/MyConsole/MyConsole.csproj",
         "projectName": "MyConsole",
-        "projectPath": "/home/peter/c-sharp-examples/005-list/MyConsole/MyConsole.csproj",
+        "projectPath": "/home/peter/c-sharp-examples/006-dictionary/MyConsole/MyConsole.csproj",
         "packagesPath": "/home/peter/.nuget/packages/",
-        "outputPath": "/home/peter/c-sharp-examples/005-list/MyConsole/obj/",
+        "outputPath": "/home/peter/c-sharp-examples/006-dictionary/MyConsole/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/peter/.nuget/NuGet/NuGet.Config"

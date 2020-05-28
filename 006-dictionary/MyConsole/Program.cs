@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic; // When you want to use Dictionary
+using System.Linq; // When you want to use FirstOrDefault
 
 namespace MyConsole
 {
@@ -68,10 +69,10 @@ namespace MyConsole
             // Remove by list index
             personList.Remove("003"); // Removes Cesar
 
-            // Remove by search - The compare will look at BirthYear only so Bertil will be removed.
+            // Remove by search - The compare will look at BirthYear only so Erik will be removed.
             // See required functions MyClass -> Person: Equals and GetHashCode.
-            var findPerson = new Person() { BirthYear=1991, Name="Cesar" };
-            personList.Remove(findPerson);
+            var myKey = personList.FirstOrDefault(x => x.Value.BirthYear == 1994).Key;
+            personList.Remove(myKey);
 
             return personList;
         }
@@ -79,9 +80,10 @@ namespace MyConsole
         /// <summary>Find an item by part of the name and then we update the name</summary>
         protected static Dictionary<string, Person> FindOneItem(Dictionary<string, Person> personList)
         {
-            var onePerson = personList.Find(x => x.Name.Contains("Cesar"));
-            if (onePerson != null) {
-                onePerson.Name = "New Cesar";
+            var myKey = personList.FirstOrDefault(x => x.Value.Name == "Adam-a").Key;
+
+            if (myKey != null) {
+                personList[myKey].Name = "New Adam";
             }
 
             return personList;

@@ -7,6 +7,8 @@ You can learn C# with these basic examples. You can use the exampels as working 
 Watch this Youtube video: [Intro to VSCode for C# Developers - From Installation to Debugging](https://youtu.be/r5dtl9Uq9V0)  
 It will get you stared on setting up: .Net, Visual Studio Code, plugins to VSCode, support for C#.
 
+Or you can read below the setup notes from the video.
+
 [Auto save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) can be enabled in menu File -> Auto save.
 
 ## Start an existing project
